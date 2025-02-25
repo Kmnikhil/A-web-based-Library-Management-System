@@ -1,0 +1,7 @@
+FastAPI Version: 0.115.8
+Uvicorn Version: 0.34.0
+Streamlit Version: 1.42.2
+passlib Version: 1.7.4
+psycopg2 Version: 2.9.10 (dt dec pq3 ext lo64)
+pydantic Version: 2.10.6
+requests Version: 2.32.3
