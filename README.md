@@ -1,20 +1,34 @@
-Here's a well-structured **README** project overview for your Library Management System:  
-
----
-
-### 📚 **Library Management System**  
+# 📚 **Library Management System**  
 A web-based Library Management System built using **FastAPI**, **PostgreSQL**, and **Streamlit** to manage book issuing, returns, and status updates efficiently.  
 
 ---
 
-## 🚀 **Project Overview**  
-This system provides a digital solution for **library staff** to manage book records. It allows employees to:  
-✅ **Issue Books** – Updates book status to *Not Available*.  
-✅ **Return Books** – Automatically updates status to *Available*.  
-✅ **Check Book Status** – Retrieves real-time availability of books.  
-✅ **Employee Login** – Secure authentication using **bcrypt-hashed passwords**.  
+## 📌 **Project Overview**
 
-The backend is powered by **FastAPI**, handling API requests and communicating with a **PostgreSQL database**. The frontend is built using **Streamlit**, providing an interactive and user-friendly interface.  
+This Library Management System is a web-based application built using **FastAPI**, **PostgreSQL**, and **Streamlit**. It allows library staff to **Issue Books, Return Books, and Check Book Status** seamlessly through an interactive interface.
+
+## 🔗 **Reference Repository**
+
+This project builds on a previous SQL-based implementation where the **database, tables, and stored procedures** were initially created. You can check out that repository here: 👉 [**Library Management System (SQL Version)**](your-repo-link-here)
+
+---
+
+## 🚀 **Features**
+
+- ✅ **Employee Authentication** (Login System for Library Staff)
+- 📘 **Book Issuing & Returning** (Stored procedures to handle transactions)
+- 📊 **Book Availability Check** (Real-time book status updates)
+- 🌐 **User-Friendly Web Interface** (Built with Streamlit)
+- 🔄 **FastAPI Backend** (Handles API requests efficiently)
+
+---
+
+The backend is powered by **FastAPI**, handling API requests and communicating with a **PostgreSQL database**. The frontend is built using **Streamlit**, providing an interactive and user-friendly interface.
+
+**Login Page :** 
+![login](https://github.com/user-attachments/assets/985f44d8-eb09-4d0d-94b2-86bdd215b8ab)
+**After Login :** 
+![image](https://github.com/user-attachments/assets/78beba09-112b-494d-a87b-62561830877c)
 
 ---
 
@@ -27,17 +41,17 @@ The backend is powered by **FastAPI**, handling API requests and communicating w
 
 ---
 
-## 📂 **Project Structure**  
+## 📂 **Project Structure**
+
 ```
 📁 library-management-system
-│-- 📄 main.py             # FastAPI backend
-│-- 📄 database.py         # PostgreSQL connection
-│-- 📄 authentication.py   # Employee login system
-│-- 📄 stored_procedures.sql # SQL procedures for book issuing/return
-│-- 📄 streamlit_app.py    # Streamlit frontend
+│-- 📄 api.py              # FastAPI backend (Handles authentication & book transactions)
+│-- 📄 creating_store_procedures.sql # SQL procedures for book issuing/return
+│-- 📄 web_interface.py    # Streamlit frontend (User interface for library staff)
 │-- 📄 requirements.txt    # Dependencies
 │-- 📄 README.md           # Project documentation
 ```
+
 
 ---
 
@@ -52,8 +66,7 @@ The backend is powered by **FastAPI**, handling API requests and communicating w
 ## 🚀 **How to Run the Project Locally**  
 1️⃣ Clone the repository:  
    ```sh
-   git clone https://github.com/yourusername/library-management-system.git
-   cd library-management-system
+   git clone https://github.com/Kmnikhil/A-web-based-Library-Management-System.git
    ```
 2️⃣ Install dependencies:  
    ```sh
@@ -61,12 +74,20 @@ The backend is powered by **FastAPI**, handling API requests and communicating w
    ```
 3️⃣ Start the FastAPI backend:  
    ```sh
-   uvicorn main:app --reload
+   uvicorn api_file:app --reload
    ```
 4️⃣ Run the Streamlit frontend:  
    ```sh
-   streamlit run streamlit_app.py
+   streamlit run web_interface.py
    ```
+---
+
+## 🎯 **Usage**
+
+1️⃣ **Login as a Library Employee** using your credentials.\
+2️⃣ **Select an Action** (Issue Book, Return Book, Check Status).\
+3️⃣ **Enter Required Details** and submit.\
+4️⃣ **View the Response** (Book issued/returned or availability status).
 
 ---
 
@@ -79,7 +100,3 @@ The backend is powered by **FastAPI**, handling API requests and communicating w
 
 ### **📌 Contributing**  
 Contributions are welcome! Feel free to fork the repo and submit pull requests.  
-
----
-
-Would you like to add anything else before uploading it to GitHub? 🚀
