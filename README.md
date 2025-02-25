@@ -9,7 +9,7 @@ This Library Management System is a web-based application built using **FastAPI*
 
 ## 🔗 **Reference Repository**
 
-This project builds on a previous SQL-based implementation where the **database, tables, and stored procedures** were initially created. You can check out that repository here: 👉 [**Library Management System (SQL Version)**](your-repo-link-here)
+This project builds on a previous SQL-based implementation where the **database, tables, and stored procedures** were initially created. You can check out that repository here: 👉 [**Library Management System (SQL Version)**](https://github.com/Kmnikhil/Library-Management-System-using-SQL.git)
 
 ---
 
